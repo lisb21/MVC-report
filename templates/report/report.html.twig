@@ -1,0 +1,46 @@
+{# templates/report.html.twig #}
+{% extends "report/default.html.twig" %}
+
+{% block title %} Rapport sidan {% endblock %}
+
+{% block body %} 
+<h1>Rapport sidan</h1>
+
+
+{% endblock body %}
+
+{% block article %}
+    <h1>Kmom 01</h1>
+    <h3>
+    Berätta kort om dina förkunskaper och tidigare erfarenheter kring objektorientering.
+    </h3>
+    <p>Jag har inga egentliga tidigare erfarenheter av objektorientering mer än ytligt teoretiskt.</p>
+
+    <h3>
+    Berätta kort om PHPs modell för klasser och objekt. Vilka är de grunder man behöver veta/förstå för att kunna komma igång och skapa sina första klasser?
+    </h3>
+    <p>i klasser kallar vi funktioner för metoder. Variabler för exempelvis properties. Minsta möjliga skulle vara en klass där en metod returnerar en property.</p>
+
+    <h3>
+    Reflektera kort över den kodbas, koden, strukturen som användes till uppgiften me/report, hur uppfattar du den?
+    </h3>
+    <p>Mycket nytt som upplevdes som magi till en början, exempelvis hur kontrollern används. Och hur man patha och använde assets.
+    Det tog mycket tid för mig att komma igång, en del märkliga errors och annat man leta sig fram till. Men när allt var igång gick det smidigt och känns kraftfullt att snabbt kunna ändra och skapa.</p>
+
+    <h3>
+    Med tanke på artikeln “PHP The Right Way”, vilka delar in den finner du extra intressanta och värdefulla? Är det några särskilda områden som du känner att du vill veta mer om? Lyft fram några delar av artikeln som du känner mer värdefulla.
+    </h3>
+    <p>Att namespaces kan användas för att undvika konflikter, dock kanske mer värdefullt om man är flera på ett projekt. Eller att projektet är större. Vet att detta nämnts på en föreläsning också.
+    Web application security är något jag funderat över ofta. Det är bra att en grundläggande resurs finns i den här artikeln. En särskilld trevlig och koncis formulering var: Data som exekeveras som kod är SQL injection, och kod som skrivs ut som data är en läcka. Bra minnesregel. </p>
+
+    <h3>
+    Vilken är din TIL för detta kmom?
+    </h3>
+    <p>Har ingen stor erfarnhet av att arbeta med ramverk, så symfony är absolut TIL i detta fall. Lite ovant i början men det fanns gott med resurser så fort något knep.</p>
+
+
+
+
+
+
+{% endblock article %}

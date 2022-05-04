@@ -1,0 +1,52 @@
+{# templates/default.html.twig #}
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %} Om mig {% endblock title %}</title>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
+    <link rel="icon" href="{{ asset('img/favicon.ico')}}">
+</head>
+
+<body>
+<div>
+    <header>
+        <img src="{{ asset('img/catico.jpeg')}}">
+        <nav>
+            <a href="{{ path('report') }}">report</a>
+            <a href="{{ path('default') }}">home</a>
+            <a href="{{ path('about') }}">about</a>
+        </nav>
+    </header>
+</div>
+
+{% block body %}
+    <h1>Om mig</h1>
+{% endblock body %}
+
+
+<article>
+{% block article %}
+
+<p><img src="{{ asset('img/catandguitar.jpg')}}" width="500" alt="Bild på min katt och gitarrintresse"></p>
+
+<p>Mitt namn är Linus Söderberg, jag huserar i Uppsala bland musikinstrument, jobb, studier och hemmaliv. Jag bor med min flickvän Louise och våran katt Morris, han kan klättra, han kan jama och han kan bita i sladdar. apropå sladd-bett, jag är numera skicklig på att löda.</p>
+
+<p>Programmering är något jag funnit senare i livet. Tidigare har jag mestadels sysslat med digital bildkonst, och om jag berört programmering så har det varit ytligt i och med webbdesign. </p>
+
+<p>Min största hobby är att modfiera instrument och bygga effekter, ett säkundärt intresse är att sedan spela instrumenten.</p>
+
+{% endblock article %}
+</article>
+<div>
+    <footer>
+        <ul>
+            <li><a href="http://www.student.bth.se/~lisb21/dbwebb-kurser/mvc/me/report/public"> student servern</a></li>
+            <li> </li>
+            <li> </li>
+        </ul>
+    </footer>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
